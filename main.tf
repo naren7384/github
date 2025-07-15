@@ -8,6 +8,16 @@ resource "azurerm_resource_group" "rg4" {
     location = "East US"
 }
 
+resource "azurerm_resource_group" "rg3" {
+    name     = "rg_narendra3"
+    location = "East US"
+}
+resource "azurerm_resource_group" "rg2" {
+    name     = "rg_narendra2"
+    location = "West US"
+
+}
+
 resource "azurerm_virtual_network" "vnet" {
     name                = "myVnet"
     address_space       = ["10.0.0.0/16"]
